@@ -27,6 +27,7 @@ client.user.setGame(`$active`,"http://twitch.tv/S-F")
   console.log('')
 });
 
+var prefix = '$'	
 client.on('message', async message => {
           if(message.content.startsWith(prefix + "active")) {
               if(!message.channel.guild) return message.reply("** هذا الامر للسيرفرات فقط :no_entry: ** ");
